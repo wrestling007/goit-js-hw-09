@@ -16,11 +16,13 @@ let changeId = null;
 
 refs.startBtn.addEventListener("click", () => {
   refs.startBtn.setAttribute('disabled', 'disabled');
+  refs.stopBtn.removeAttribute('disabled');
    changeId = setInterval(setBodyColor, 1000) 
 })
 
 refs.stopBtn.addEventListener("click", () => {
   clearInterval(changeId);
-  refs.stopBtn.removeAttribute('disabled');  
+  refs.stopBtn.setAttribute('disabled', 'disabled');
+  refs.startBtn.removeAttribute('disabled');  
 })
 

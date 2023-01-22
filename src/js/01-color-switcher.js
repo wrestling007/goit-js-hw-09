@@ -25,4 +25,3 @@ refs.stopBtn.addEventListener("click", () => {
   refs.stopBtn.setAttribute('disabled', 'disabled');
   refs.startBtn.removeAttribute('disabled');  
 })
-
